@@ -8,7 +8,7 @@ void recur(int ind, vector<int>nums, vector<int>ds, vector<vector<int>>&ans, int
     ds.push_back(nums[ind]);
     recur(ind + 1, nums, ds, ans, len);
     ds.pop_back();
-    recur(ind + 1, nums, ds, ans, len);
+    recur(ind + 1, nums, ds, ans, len);// not taking element and approching to the BASE CASE state.
 
 }
     vector<vector<int>> subsets(vector<int>& nums) {
